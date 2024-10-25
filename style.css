@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    
+  }
+  
+  header {
+    background-color: #4b4242;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    
+    background-color: #e01212;
+    color: white;
+    position: fixed;
+    height: 25px;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  /* Movie List Grid */
+  .movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Movie Card */
+  .movie-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  .movie-card1{
+   
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .movie-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .movie-info {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .movie-info h3 {
+    font-size: 18px;
+    color: #7a28d2;
+    margin: 0 0 10px 0;
+  }
+  
+  .movie-info p {
+    font-size: 14px;
+    color: #b11616;
+    margin-bottom: 10px;
+  }
+  
+  .movie-info a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .movie-info a:hover {
+    text-decoration: underline;
+  }
+  h2{
+    margin-bottom: 0;
+    text-align: left;
+    display: block;
+    margin-left: 25px;
+    color: #555;
+  }
+
+
+
+/* Style for the title section above the form */
+/* Style for the title section above the form */
+.first-login {
+  text-align: center;
+  margin-top: 20px; /* Decreased margin-top for less space above title */
+}
+
+/* Title styling */
+.first-login h2 {
+  color: #131314;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Decreased margin-bottom to reduce space between title and form */
+}
+
+/* Login form container styling */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto; /* Center the form */
+  margin-top: 20px; /* Decreased margin-top to bring form closer to the title */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: rgb(247, 209, 196);
+}
+.login{
+  padding-top:150px;
+  padding-right: 550px;
+}
+
+
+  
+  .login-container p {
+    color: #4b4242;
+    font-size: 25px;
+    font-weight: bold;
+    
+  }
+  
+  .login-container label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4b4242;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-container button:hover {
+    background-color: #333;
+  }
+  .login{
+    float: right;
+    margin-right: 20px;
+    color: #e01212; /* Red color same as the footer or desired red shade */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+   
+  }
+  
+  .login:hover {
+    color: #e01212; /* Keep the color the same on hover */
+  }
+  .first-login h2{
+    color: #131314;
+    text-align: center;
+    
+  }
+  .search-container {
+    position: absolute;
+    top: 20px; /* Adjust this value to position it vertically */
+    right: 20px; /* Adjust this value to position it horizontally */
+}
+
+.search-container input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+  

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>LEISURE WATCHERS</h1>
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Search for a movie..." />
+    </div>
+  </header>
+  <section class="movie-list">
+    <!-- Movie Cards -->
+    <div class="movie-card1">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.t17m7fwcR5-gltN4BRaQcQHaEK&pid=Api&P=0&h=180" alt="Movie Title 1" />
+      <div class="movie-info">
+        <h3>AVENGERS</h3>
+        <p>Action, Adventure</p>
+        <a href="#" class="view-details" 
+           data-title="AVENGERS"
+           data-description="The Avengers assemble to save the world from various threats."
+           data-actors="Robert Downey Jr., Chris Evans, Scarlett Johansson">View Details</a>
+      </div>
+    </div>
+    <div class="movie-card1">
+      <img src="queenof images.jpeg" alt="Movie Title 2" />
+      <div class="movie-info">
+        <h3>QUEEN OF TEARS</h3>
+        <p>Drama, Romance</p>
+        <a href="#" class="view-details" 
+           data-title="QUEEN OF TEARS"
+           data-description="A dramatic love story that explores the depths of human emotion."
+           data-actors="John Doe, Jane Smith">View Details</a>
+      </div>
+    </div>
+    <div class="movie-card1">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.cPgEhAapSRWwEH97BHH7rgHaEK&pid=Api&P=0&h=180" alt="Movie Title 3" />
+      <div class="movie-info">
+        <h3>DEVARA</h3>
+        <p>Thriller, Mystery</p>
+        <a href="#" class="view-details" 
+           data-title="DEVARA"
+           data-description="A gripping thriller filled with unexpected twists."
+           data-actors="Actor A, Actor B">View Details</a>
+      </div>
+    </div>
+  </section>
+      
+
+      
+        <br>
+        
+          <h2>Based on viewing and preferences</h2>
+         
+          <section class="movie-list">
+            <!-- Movie Cards -->
+            <div class="movie-card">
+              <img src="animal2.avif" alt="Title 1" />
+              <div class="movie-info">
+                <h3>ANIMAL</h3>
+                <p>Action, Romance</p>
+                <a href="#" class="view-details" 
+                   data-title="ANIMAL"
+                   data-description="An action-packed adventure with twists and turns."
+                   data-actors="Actor C, Actor D">View Details</a>
+              </div>
+            </div>
+            <div class="movie-card">
+              <img src="friends3.jpg" alt="Movie Title 2" />
+              <div class="movie-info">
+                <h3>F.R.I.E.N.D.S</h3>
+                <p>Drama, Romance</p>
+                <a href="#" class="view-details" 
+                   data-title="F.R.I.E.N.D.S"
+                   data-description="A group of friends navigating through life and love."
+                   data-actors="Actor E, Actor F">View Details</a>
+              </div>
+            </div>
+            <div class="movie-card">
+              <img src="salaar2.webp" alt="Movie Title 3" />
+              <div class="movie-info">
+                <h3>SALAAR</h3>
+                <p>Thriller, Mystery</p>
+                <a href="#" class="view-details" 
+                   data-title="SALAAR"
+                   data-description="A thrilling story of revenge and redemption."
+                   data-actors="Actor G, Actor H">View Details</a>
+              </div>
+            </div>
+          </section>
+        
+      
+        <!-- Movie Cards -->
+
+    <footer>
+      <p>&copy; 2024 Movie Recommendation Platform</p>
+    </footer>
+    
+    <script>
+      // Function to handle View Details clicks
+      document.querySelectorAll('.view-details').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault(); // Prevent the default anchor click behavior
+          const title = this.getAttribute('data-title');
+          const description = this.getAttribute('data-description');
+          const actors = this.getAttribute('data-actors');
+  
+          // Show movie details in an alert
+          alert(`Title: ${title}\nDescription: ${description}\nActors: ${actors}`);
+        });
+      });
+  
+      // Search functionality
+      document.getElementById('searchBar').addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        const movieCards = document.querySelectorAll('.movie-card, .movie-card1');
+  
+        movieCards.forEach(card => {
+          const movieTitle = card.querySelector('h3').textContent.toLowerCase();
+          if (movieTitle.includes(query)) {
+            card.style.display = 'block'; // Show card if it matches
+          } else {
+            card.style.display = 'none'; // Hide card if it doesn't match
+          }
+        });
+      });
+    </script>
+    
+
+    <script>
+      document.getElementById('searchBar').addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        const movieCards = document.querySelectorAll('.movie-card, .movie-card1');
+  
+        movieCards.forEach(card => {
+          const movieTitle = card.querySelector('h3').textContent.toLowerCase();
+          if (movieTitle.includes(query)) {
+            card.style.display = 'block'; // Show card if it matches
+          } else {
+            card.style.display = 'none'; // Hide card if it doesn't match
+          }
+        });
+      });
+    </script>
+    
+  </body>
+  </html>
